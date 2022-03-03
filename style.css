@@ -1,0 +1,23 @@
+.body {
+    display: flex;
+    width: 1440px;
+    background: hsl(185, 75%, 39%);
+    justify-content: center;
+    margin: 0px 0px 0px 0px;
+}
+
+.attribution {
+     font-size: 11px; 
+     text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+.card{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 350px;
+    width: 350px;
+}
