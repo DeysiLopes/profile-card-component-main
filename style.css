@@ -1,23 +1,71 @@
-.body {
-    display: flex;
-    width: 1440px;
-    background: hsl(185, 75%, 39%);
-    justify-content: center;
-    margin: 0px 0px 0px 0px;
+* {
+    margin: 0px;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+html, 
+    body{
+        --dark-cyan:#19a2ae;
+        --dark-blue: #2d3248;
+        --dark-gray:#6a6f81;
+        --gray: #969696;
+        --purple:#3e52a3;
+        height: 100%;
+        font-family: 'Kumbh Sans', sans-serif;
+    }
+    body{
+        display: grid;
+        place-items: center;
+    }
+    main{
+        background: var(--dark-cyan);
+        background: radial-gradient(circle, var(--dark-cyan) 0%, var(--dark-blue) 100%); 
+        width: 100vw;
+        min-height: 812px;
+        height: 100vh;
+    }
+    .card > img{
+        display: flex;
+        justify-content: center;
+        max-width: 300px;
+        margin: 150px 0px 0px 300px;
+        text-align: center;
+        border-radius: 5%;
+
+    }
+    #userImage{
+        align-items: center;
+        width: 10rem;
+        height: 11.5rem;
+        object-fit: cover;
+        border-radius: 60%;
+        margin: 0px 0px 0px 300px;
+    }
+
+    [class*="col-"] {
+        width: 100%;
+      }
+    @media only screen and (min-width: 768px) {
+        .col-1 {height: 33.3333;}
+        .col-2 {height: 66.6667;}
+        .col-3 {height: 100;}
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: flex;
+      }
+   
+
 .attribution {
-     font-size: 11px; 
-     text-align: center; 
+    font-size: 11px; 
+    text-align: center; 
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%);
-}
-.card{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    height: 350px;
-    width: 350px;
+    color: var(--purple);
 }
